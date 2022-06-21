@@ -1,0 +1,84 @@
+@import "../abstracts/variables";
+
+.btn{
+    box-shadow: none;
+    border: 0;
+}
+.btn-primary{
+    background-color: $color;
+    border-radius: 5px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 15px;
+    color: $primary-color;
+    border: none;
+    background-size: 300% 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    &.btn-big{
+        height: 50px;
+        padding-left: 20px;
+        padding-right: 20px; 
+        @media screen and(max-width: 991px){
+            height: 45px;
+        }
+    }
+    &:hover{
+        background-color: #E4EEE9;
+        color: $dark-green-color;
+    }
+    &:focus{
+        background-color: #E4EEE9;
+        color: $dark-green-color;
+        box-shadow: none;
+    }
+}
+.btn-secondary{
+    background-color: $dark-color;
+    border-radius: 5px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 15px;
+    color: $color;
+    border: none;
+    background-size: 300% 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    &.btn-big{
+        height: 50px;
+        padding-left: 20px;
+        padding-right: 20px; 
+        @media screen and(max-width: 991px){
+            height: 45px;
+        }
+    }
+    &:hover{
+        background-color: #E4EEE9;
+        color: $dark-green-color;
+    }
+    &:focus{
+        background-color: #E4EEE9;
+        color: $dark-green-color;
+        box-shadow: none;
+    }
+}
+.btn-close{
+    background: transparent !important;
+    color: #fff !important;
+    background-image: url("../images/close.png") !important;
+    background-repeat: no-repeat !important;
+}
